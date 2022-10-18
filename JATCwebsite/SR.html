@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JA(T)C</title>
+    <link rel = "icon" href = "embeds/Logo.png" 
+    type = "image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Sans-Serif, Lucida, Helvetica;
+            padding-bottom: 29px;
+            position: relative;
+            min-height:93vh;
+        }
+        .menubar {
+            background-color:#E6E6FA;
+            width: 100%;
+            height: 6.7em;
+        }
+        .menubar a {
+            float: right;
+            padding: 0.3em;
+            margin-top: 2.8em;
+            margin-right: 0.7em;
+            font-size: 18px;
+        }
+        .menubar a:hover{
+            background-color: #f08080;
+        }
+        .addressbar {
+            background-color:#E6E6FA;
+            width: 100%;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+        }
+        .addressbar > cite {
+            float:left;
+            padding: 0.3em;
+        }
+        #content {
+            padding: 1%;
+            background-color: #E0FFFF;
+            color: #2F4F4F;
+            font-size: 6;
+            margin:auto;
+            width: 55%;
+        }
+        #studentname > div{
+            float:left;
+            margin: auto;
+            padding:1%;
+            width:30.5%;
+        }
+        #studentname > div input{
+            width:100%;
+        }
+        #birthdate {
+
+            float:left;
+            margin: auto;
+            padding:1%;
+            width:47%;
+        }
+        #birthdate div {
+
+            float:left;
+            margin: auto;
+            padding:1%;
+            width:30%;
+        }
+        #birthdate div select{
+
+            width:100%;
+        }
+        #gender {
+
+            float:right;
+            margin: auto;
+            margin-bottom: 2%;
+            padding:1%;
+            padding-bottom: 2.8%;
+            width:47%;
+        }
+        #gender div {
+
+            margin: auto;
+            padding:1%;
+            width:100%;
+        }
+        #gender div select{
+
+            width:50%;
+        }
+        #address {
+
+            padding: 1%;
+            margin-top: 29px;
+        }
+        #address div input {
+            width: 100%;
+        }
+        #SEnPN {
+
+           float: left;
+           margin: auto;
+            padding:1%;
+            width:45%; 
+        }
+        #SEnPN input{
+            width:100%; 
+        }
+        #MNnWN {
+
+           float: right;
+           margin: auto;
+           padding:1%;
+           padding-bottom: 2.7%;
+           width:45%; 
+        }
+        #MNnWN input{
+            width:100%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="menubar">
+        <a style="margin-right: 80px; margin-top: 1.5em;" href="index.html" target="_self" type="HTML"><img src="embeds/Logo.png" 
+        width="76px" height="50px" ></a>
+        <a href="QA.html" target="_self" type="HTML">QUIZ APP</a>
+        <a href="SR.html" target="_self" type="HTML">STUDENT REGISTRATION</a>
+        <a href="stats.html" target="_self" type="HTML">STATS</a>
+    </div>
+    <br>
+    <form id="content" action="results.html" method="get">
+        <h1>Student Registration Form</h1>
+        <p>Fill out the form carefully for registration</p>
+        <br>
+        <section id="studentname">
+            <h3>Student Name</h3>
+            <div>
+                <input id="firstname" type="text">
+                <br>
+                <label for="firstname">First Name</label>
+            </div>
+            <div>
+                <input id="middlename" type="text">
+                <br>
+                <label for="middlename">Middle Name</label>
+            </div>
+            <div>
+                <input stylr="float:right;" id="Lastname" type="text">
+                <br>
+                <label for="Lastname">Last Name</label>
+            </div>
+        </section>
+        <section style="margin-bottom: 1%; ">
+            <div id="birthdate">
+                <h3 style="clear: both;">Birth Date</h3>
+                <br>
+                <div>
+                    <select name="Month">
+                    <option value=""></option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                    </select>
+                <br>
+                <label for="Month">Month</label>
+                </div>
+                <div>
+                    <select name="Day">
+                        <option value=""></option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <br>
+                    <label for="Day">Day</label>
+                </div>
+                <div>
+                    <select name="Year">
+                        <option value=""></option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                    </select>
+                    <br>
+                    <label for="Year">Year</label>
+                </div>
+            </div>
+            <div id="gender">
+                <h3>Gender</h3>
+                <br>
+                <div>
+                    <select style="width:100%;" name="Gender">
+                        <option value="">Please select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="address" style="clear:both;">
+            <h4>Address</h4>
+            <br>
+            <div>
+                <input>
+                <br>
+                <label>Street Adress</label>
+            </div>
+            <br>
+            <div>
+                <input>
+                <br>
+                <label>Street Adress Line 2</label>
+            </div>
+            <br>
+            <div style="float:left; width:45%;">
+                <input style="width: 100%;">
+                <br>
+                <label>City</label>
+            </div>
+            <div style="float:right; width:50%; margin-bottom:2%">
+                <input style="width: 100%;">
+                <br>
+                <label>State/Province</label>
+            </div>
+            <br>
+            <div>
+                <input>
+                <br>
+                <label>Postal/Zip Code</label>
+            </div>
+        </section>
+        <br>
+        <section style="padding: 1%;">
+            <div id="SEnPN">
+                <h3>Student E-mail</h3>
+                <input type="email" name="studentemail" placeholder="ex.myname@example.com">
+                <br>
+                <samp for="studentemail">example@example.com</samp>
+            </div>
+            <div id="MNnWN">
+                <h3>Mobile Number</h3>
+                <input type="tel" name="mobilenumber" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" placeholder="(000) 000-0000">
+            </div>    
+        <br>
+            <div id="SEnPN" style="clear:both;">
+                <h3>Phone Number</h3>
+                <input type="tel" name="phonenumber" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" placeholder="(000) 000-0000">
+            </div>
+            <div id="MNnWN" style="padding:1%;">
+                <h3>Work Number</h3>
+                <input type="tel" name="worknumber" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" placeholder="(000) 000-0000">
+            </div>
+        <br>
+            <div style="clear:both; margin:auto; padding:1%">
+                <h3>Company</h3>
+                <input type="text" name="combany" style="width: 50%; height: 20px;">
+            </div>
+            <div style="clear:both; margin:auto; padding:1%;">
+                <h3>Course</h3>
+                <select name="course" style="width:50%; height: 20px;">
+                    <option name="">Please Select</option>
+                    <option name="BSIT">Bachelor in Information Technology</option>
+                    <option name="BSIS">Bachelor in Information Systems</option>
+                    <option name="ComSci">Bachelor in Computer Science</option>
+                    <option name="ComEngineer">Bachelor in Computer Engineer</option>
+                    <option name="BSAgri">Bachelor in Agriculture</option>
+                    <option name="BSNursing">Bachelor in Nursing</option>
+                    <option name="BSArchitect">Bachelor in Architectiure</option>
+                </select>
+            </div>
+        </section>
+        <br>
+        <section>
+            <h3>Additional Comments</h3>
+            <textarea name="addcomments" placeholder="Type here" style="width: 100%; height: 75px;"></textarea>
+        </section>
+        <br>
+        <button type="submit" style="border:1px solid green; background-color: green; color:white; padding: 0.3%;"><h3>Submit Application</h3></button>
+                <button type="reset" style="border:1px solid red; 
+                background-color: red; color:white; padding: 0.3% 2%;
+                float:right;"><h3>Clear Fields</h3></button>
+    </form>
+    <br>
+    <footer class="addressbar">
+        <cite>Copyright ASM @2022</cite>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
